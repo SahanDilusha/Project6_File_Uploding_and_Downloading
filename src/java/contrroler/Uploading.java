@@ -27,19 +27,13 @@ public class Uploading extends HttpServlet {
 //
 //        String applicationPath = req.getServletContext().getRealPath("");
 //        File directory = new File(applicationPath + "file");
-//
-//        // Create the directory if it doesn't exist
-//        if (!directory.exists()) {
-//            directory.mkdirs();
-//        }
-//
 //        File newFile = new File(directory, "hello.png");
 //
 //        Part filePart = req.getPart("file");
 //        InputStream inputStream = filePart.getInputStream();
 //
 //        Files.copy(inputStream, newFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-       
+
         String email = req.getParameter("email");
         Part filePart = req.getPart("file");
 
